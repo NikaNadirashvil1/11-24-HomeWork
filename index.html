@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Osteria</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="icon" type="image/png" href="./Photos/Logo.png">
+</head>
+
+<body>
+
+<section class="section-1">
+
+
+    <!-- GRID დავალება -->
+
+    <h2 class="grid-title">Pasta Osteria - ჩვენი მენიუ</h2>
+
+    <div class="cards">
+
+        <div class="card card-featured">
+            <h3>იტალიური პასტა</h3>
+            <p>უგემრიელესი იტალიური პასტა.</p>
+            <p>ფასი: 35 ₾</p>
+        </div>
+
+        <div class="card">
+            <h3>პიცა</h3>
+            <p>ტრადიციული იტალიური პიცა.</p>
+            <p>ფასი: 30 ₾</p>
+        </div>
+
+        <div class="card card-tall">
+            <h3>ლაზანია</h3>
+            <p>კლასიკური იტალიური ლაზანია.</p>
+            <p>ფასი: 40 ₾</p>
+        </div>
+
+        <div class="card">
+            <h3>სპაგეტი</h3>
+            <p>სპაგეტი იტალიური სოუსით.</p>
+            <p>ფასი: 25 ₾</p>
+        </div>
+
+        <div class="card">
+            <h3>დესერტი</h3>
+            <p>უგემრიელესი ტირამისუ.</p>
+            <p>ფასი: 20 ₾</p>
+        </div>
+
+    </div>
+
+    <!-- <form>
+        <label for="username">Username</label>
+        <input type="text" required
+        minlength="3" maxlength="10"> 
+
+        <button type="submit">Submit</button>
+    </form> -->
+
+<form action="/register" method="post">
+
+    <label for="username">Username</label>
+    <input
+        id="username"
+        name="username"
+        type="text"
+        required
+        minlength="2"
+        maxlength="30"
+        placeholder="Username..."
+    >
+
+    <label for="email">Email</label>
+    <input
+        id="email"
+        name="email"
+        type="email"
+        required
+        placeholder="Email..."
+    >
+
+    <label for="phone">Phone</label>
+    <input
+        id="phone"
+        name="phone"
+        type="tel"
+        required
+        pattern="5[0-9]{8}"
+        title="9 ციფრი, იწყება 5-ით"
+        placeholder="Phone..."
+    >
+
+    <label for="age">Age</label>
+    <input
+        id="age"
+        name="age"
+        type="number"
+        min="16"
+        max="100"
+    >
+
+    <label for="date">Date</label>
+    <input
+        id="date"
+        name="date"
+        type="date"
+        min="2026-11-17"
+        max="2026-11-25"
+    >
+
+    <label for="city">City</label>
+    <select id="city" name="city">
+        <option value="tbilisi">თბილისი</option>
+        <option value="batumi">ბათუმი</option>
+        <option value="kutaisi">ქუთაისი</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea
+        id="message"
+        name="message"
+        placeholder="Write something..."
+        rows="4"
+    ></textarea>
+
+    <fieldset>
+        <legend>აირჩიე გეგმა</legend>
+
+        <input type="radio" id="basic" name="plan" value="basic">
+        <label for="basic">Basic</label>
+
+        <input type="radio" id="pro" name="plan" value="pro">
+        <label for="pro">Pro</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>აირჩიე დამატებითი სერვისები</legend>
+
+        <input type="checkbox" id="delivery" name="services" value="delivery">
+        <label for="delivery">Delivery</label>
+
+        <input type="checkbox" id="discount" name="services" value="discount">
+        <label for="discount">Discount</label>
+
+        <input type="checkbox" id="bonus" name="services" value="bonus">
+        <label for="bonus">Bonus</label>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+    <p class="Anim">Hei</p>
+
+    <p class="Anim2">Hai</p>
+
+    <button class="Button">Submit</button>
+
+
+</section>
+
+</body>
+</html>
